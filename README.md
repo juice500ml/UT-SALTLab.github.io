@@ -7,27 +7,10 @@ This website is powered by Jekyll and Bootstrap. It is configured for GitHub Pag
 ## Setup
 
 ### Prerequisites
-
 - Ruby (version 3.1 or compatible)
 
-### Quick Setup (Recommended)
-
-Run the automated setup script:
-```bash
-./setup_local.sh
-```
-
-This will:
-- Install Bundler locally (no root required)
-- Configure local gem installation
-- Install all Jekyll dependencies
-
 ### Manual Setup
-
-If you prefer to set up manually:
-
 To avoid permission issues, install Bundler to your user directory:
-
 ```bash
 gem install --user-install bundler
 ```
@@ -48,11 +31,6 @@ source ~/.bashrc  # or source ~/.zshrc
 ### Install Dependencies
 
 Install gems locally to the project (no root required):
-```bash
-bundle install --path vendor/bundle
-```
-
-Or configure bundler to always use local path:
 ```bash
 bundle config set --local path 'vendor/bundle'
 bundle install
