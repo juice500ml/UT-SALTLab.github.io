@@ -47,6 +47,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: github.event_name == 'push' && github.event.repository.fork == false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
